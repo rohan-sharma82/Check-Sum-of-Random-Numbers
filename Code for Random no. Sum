@@ -12,3 +12,26 @@ for i in range(10):
 
 print("list of Hit elemets:- ",Set)
 
+
+#Selecting key between 3 to 6
+
+#PROBLEM 2
+
+
+
+import random as ran
+
+Set=[]
+key=ran.randint(3,6)
+for i in range(10):
+  selection= ran.choices([-12, -3, -6, 7, 2, -2, 6, 3, 9, -7, -5, -8, 1, 11, -9, -4],k=key)
+  print(selection)
+  if sum(selection)==0:
+    Set.append(selection)
+    print("HIT IT BRO")
+  else:
+    print('missed')
+
+print("list of Hit elemets:- ",Set)
+
+
