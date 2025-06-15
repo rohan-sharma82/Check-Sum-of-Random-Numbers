@@ -1,0 +1,14 @@
+import random as ran
+
+Set=[]
+for i in range(10):
+  selection= ran.choices([-12, -3, -6, 7, 2, -2, 6, 3, 9, -7, -5, -8, 1, 11, -9, -4],k=5)
+  print(selection)
+  if sum(selection)==0:
+    Set.append(selection)
+    print("HIT IT BRO")
+  else:
+    print('missed')
+
+print("list of Hit elemets:- ",Set)
+
